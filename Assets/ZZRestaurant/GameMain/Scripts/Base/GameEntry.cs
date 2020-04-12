@@ -9,7 +9,6 @@ namespace Tutorial
     /// </summary>
     public partial class GameEntry : MonoBehaviour
     {
-        private IObjectPool<Custom> customPool;
         private void Start()
         {
             // 初始化内置组件
@@ -20,19 +19,6 @@ namespace Tutorial
 
             // 初始化自定义调试器
             InitCustomDebuggers();
-
-            customPool = ObjectPool.CreateMultiSpawnObjectPool<Custom>("Customs");
-            CreateCustom();
-        }
-
-        private void Update()
-        {
-            
-        }
-
-        private void CreateCustom()
-        {
-            customPool.Register(new Custom(), false);
         }
     }
 }
