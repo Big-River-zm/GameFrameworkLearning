@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace Tutorial
+namespace ZZ.Core
 {
     /// <summary>
     /// 游戏入口。

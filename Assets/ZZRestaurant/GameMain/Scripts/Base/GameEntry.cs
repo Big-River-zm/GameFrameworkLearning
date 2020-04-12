@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-namespace Tutorial
+namespace ZZ.Core
 {
     /// <summary>
     /// 游戏入口。
