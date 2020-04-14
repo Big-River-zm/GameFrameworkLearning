@@ -20,7 +20,7 @@ namespace UnityGameFramework.Runtime
         /// </summary>
         /// <param name="fileUri">文件路径。</param>
         /// <param name="loadBytesCallback">读取数据流回调函数。</param>
-        public abstract void LoadBytes(string fileUri, LoadBytesCallback loadBytesCallback);
+        public abstract void LoadBytes(string fileUri, LoadBytesCallbacks loadBytesCallback);
 
         /// <summary>
         /// 卸载场景。
@@ -35,5 +35,6 @@ namespace UnityGameFramework.Runtime
         /// </summary>
         /// <param name="objectToRelease">要释放的资源。</param>
         public abstract void Release(object objectToRelease);
+        public abstract void LoadBytes(string fileUri, LoadBytesCallbacks loadBytesCallbacks, object userData);
     }
 }

@@ -51,7 +51,7 @@ namespace UnityGameFramework.Editor
             EditorGUILayout.BeginVertical("box");
             {
                 EditorGUILayout.LabelField(networkChannel.Name, networkChannel.Connected ? "Connected" : "Disconnected");
-                EditorGUILayout.LabelField("Network Type", networkChannel.NetworkType.ToString());
+                EditorGUILayout.LabelField("Network Type", networkChannel.ServiceType.ToString());
                 EditorGUILayout.LabelField("Local Address", networkChannel.Connected ? networkChannel.Socket.LocalEndPoint.ToString() : "Unavailable");
                 EditorGUILayout.LabelField("Remote Address", networkChannel.Connected ? networkChannel.Socket.RemoteEndPoint.ToString() : "Unavailable");
                 EditorGUILayout.LabelField("Send Packet", Utility.Text.Format("{0} / {1}", networkChannel.SendPacketCount.ToString(), networkChannel.SentPacketCount.ToString()));

@@ -25,7 +25,7 @@ namespace UnityGameFramework.Runtime
         /// </summary>
         /// <param name="fileUri">文件路径。</param>
         /// <param name="loadBytesCallback">读取数据流回调函数。</param>
-        public override void LoadBytes(string fileUri, LoadBytesCallback loadBytesCallback)
+        public override void LoadBytes(string fileUri, LoadBytesCallbacks loadBytesCallback)
         {
             StartCoroutine(LoadBytesCo(fileUri, loadBytesCallback));
         }
@@ -106,7 +106,7 @@ namespace UnityGameFramework.Runtime
         {
         }
 
-        private IEnumerator LoadBytesCo(string fileUri, LoadBytesCallback loadBytesCallback)
+        private IEnumerator LoadBytesCo(string fileUri, LoadBytesCallbacks loadBytesCallback)
         {
             byte[] bytes = null;
             string errorMessage = null;
@@ -139,7 +139,7 @@ namespace UnityGameFramework.Runtime
 
             if (loadBytesCallback != null)
             {
-                loadBytesCallback(fileUri, bytes, errorMessage);
+                //loadBytesCallback(fileUri, bytes, errorMessage);
             }
         }
 
@@ -168,6 +168,11 @@ namespace UnityGameFramework.Runtime
                     unloadSceneCallbacks.UnloadSceneFailureCallback(sceneAssetName, userData);
                 }
             }
+        }
+
+        public override void LoadBytes(string fileUri, LoadBytesCallbacks loadBytesCallbacks, object userData)
+        {
+            throw new System.NotImplementedException();
         }
 #endif
     }

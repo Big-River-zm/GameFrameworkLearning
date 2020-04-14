@@ -408,6 +408,16 @@ namespace UnityGameFramework.Runtime
             }
         }
 
+        public PackageVersionListSerializer PackageVersionListSerializer => throw new NotImplementedException();
+
+        public UpdatableVersionListSerializer UpdatableVersionListSerializer => throw new NotImplementedException();
+
+        public ReadOnlyVersionListSerializer ReadOnlyVersionListSerializer => throw new NotImplementedException();
+
+        public ReadWriteVersionListSerializer ReadWriteVersionListSerializer => throw new NotImplementedException();
+
+        public int GenerateReadWriteVersionListLength { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
 #pragma warning disable 0067, 0414
 
         /// <summary>

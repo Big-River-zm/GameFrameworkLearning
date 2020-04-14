@@ -241,11 +241,11 @@ namespace UnityGameFramework.Runtime
         {
             get
             {
-                return m_ResourceManager.GenerateReadWriteListLength;
+                return m_ResourceManager.GenerateReadWriteVersionListLength;
             }
             set
             {
-                m_ResourceManager.GenerateReadWriteListLength = m_GenerateReadWriteListLength = value;
+                m_ResourceManager.GenerateReadWriteVersionListLength = m_GenerateReadWriteListLength = value;
             }
         }
 
@@ -543,7 +543,7 @@ namespace UnityGameFramework.Runtime
             if (m_ResourceMode == ResourceMode.Updatable)
             {
                 m_ResourceManager.UpdatePrefixUri = m_UpdatePrefixUri;
-                m_ResourceManager.GenerateReadWriteListLength = m_GenerateReadWriteListLength;
+                m_ResourceManager.GenerateReadWriteVersionListLength = m_GenerateReadWriteListLength;
                 m_ResourceManager.UpdateRetryCount = m_UpdateRetryCount;
             }
 
