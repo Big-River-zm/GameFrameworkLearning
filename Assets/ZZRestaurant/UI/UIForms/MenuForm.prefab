@@ -579,6 +579,7 @@ GameObject:
   - component: {fileID: 6491270663837102897}
   - component: {fileID: 4179309737092602051}
   - component: {fileID: 114683416933222518}
+  - component: {fileID: 114265933991944358}
   m_Layer: 5
   m_Name: MenuForm
   m_TagString: Untagged
@@ -645,6 +646,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114265933991944358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4762062728032836656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7273dcb5736cc0548a4dd0e49c8a673f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5360085988371956878
 GameObject:
   m_ObjectHideFlags: 0

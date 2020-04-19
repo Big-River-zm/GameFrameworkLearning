@@ -1,4 +1,4 @@
-﻿namespace ZZ.Enum
+﻿namespace ZZ
 {
     /// <summary>
     /// 富有程度

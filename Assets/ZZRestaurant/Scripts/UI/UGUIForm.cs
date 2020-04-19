@@ -97,15 +97,15 @@ namespace ZZ
 
             gameObject.GetOrAddComponent<GraphicRaycaster>();
 
-            Text[] texts = GetComponentsInChildren<Text>(true);
-            for (int i = 0; i < texts.Length; i++)
-            {
-                texts[i].font = s_MainFont;
-                if (!string.IsNullOrEmpty(texts[i].text))
-                {
-                    texts[i].text = GameEntry.Localization.GetString(texts[i].text);
-                }
-            }
+            //Text[] texts = GetComponentsInChildren<Text>(true);
+            //for (int i = 0; i < texts.Length; i++)
+            //{
+            //    texts[i].font = s_MainFont;
+            //    if (!string.IsNullOrEmpty(texts[i].text))
+            //    {
+            //        texts[i].text = GameEntry.Localization.GetString(texts[i].text);
+            //    }
+            //}
         }
 
         protected override void OnOpen(object userData)

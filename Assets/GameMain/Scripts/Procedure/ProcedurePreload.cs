@@ -11,9 +11,7 @@ using GameFramework.Resource;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityGameFramework.Runtime;
-#pragma warning disable CS0436 // 类型与导入类型冲突
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
-#pragma warning restore CS0436 // 类型与导入类型冲突
 
 namespace StarForce
 {

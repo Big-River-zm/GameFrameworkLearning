@@ -32,7 +32,7 @@ namespace ZZ
             base.OnEnter(procedureOwner);
 
             GameEntry.Event.Subscribe(OpenUIFormSuccessEventArgs.EventId, OnOpenUIFormSuccess);
-
+            Log.Info("´ò¿ªMenu");
             GameEntry.UI.OpenUIForm(UIFormId.MenuForm, this);
         }
 

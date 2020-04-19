@@ -29,16 +29,16 @@ namespace ZZ
         /// <summary>
         /// 主菜单
         /// </summary>
-        MenuForm=2,
+        MenuForm=100,
 
         /// <summary>
         /// 设置界面
         /// </summary>
-        SettingForm=3,
+        SettingForm=101,
 
         /// <summary>
         /// 信息界面
         /// </summary>
-        InfoForm=4,
+        InfoForm=102,
 	}
 }
