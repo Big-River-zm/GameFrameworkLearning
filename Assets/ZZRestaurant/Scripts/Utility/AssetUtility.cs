@@ -38,5 +38,15 @@ namespace ZZ
         {
             return Utility.Text.Format("Assets/ZZRestaurant/Fonts/{0}.ttf", assetName);
         }
+
+        public static string GetSceneAsset(string assetName)
+        {
+            return Utility.Text.Format("Assets/ZZRestaurant/Scenes/{0}.unity", assetName);
+        }
+
+        public static string GetMusicAsset(string assetName)
+        {
+            return Utility.Text.Format("Assets/ZZRestaurant/Music/{0}.mp3", assetName);
+        }
     }
 }

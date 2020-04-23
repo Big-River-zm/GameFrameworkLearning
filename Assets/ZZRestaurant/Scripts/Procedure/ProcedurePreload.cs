@@ -24,6 +24,9 @@ namespace ZZ
 
         public static readonly string[] DataTableNames = new string[]
         {
+            "Music",
+            "Sound",
+            "Scene",
             "UIForm",
         };
 
@@ -84,7 +87,7 @@ namespace ZZ
         private void PreloadResources()
         {
             // Preload configs
-            //LoadConfig("DefaultConfig");
+            LoadConfig("DefaultConfig");
 
             // Preload data tables
             foreach (string dataTableName in DataTableNames)
@@ -102,7 +105,7 @@ namespace ZZ
         private void LoadConfig(string configName)
         {
             m_LoadedFlag.Add(Utility.Text.Format("Config.{0}", configName), false);
-            GameEntry.Config.LoadConfig(configName, LoadType.Bytes, this);
+            GameEntry.Config.LoadConfig(configName, LoadType.Text, this);
         }
 
         private void LoadDataTable(string dataTableName)
