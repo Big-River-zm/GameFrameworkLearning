@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameMain/Scenes/Main.unity
     guid: 4473d81b14ddb0143addf0e6050d8491
+  - enabled: 1
+    path: Assets/ZZRestaurant/Scenes/Main.unity
+    guid: 63d88ad08d2bf9a4faaf5bdb5e9e5e86
   m_configObjects: {}

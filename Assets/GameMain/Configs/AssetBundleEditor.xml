@@ -2,7 +2,7 @@
 <UnityGameFramework>
   <AssetBundleEditor>
     <Settings>
-      <SourceAssetRootPath>Assets/GameMain</SourceAssetRootPath>
+      <SourceAssetRootPath>Assets/ZZRestaurant</SourceAssetRootPath>
       <SourceAssetSearchPaths>
         <SourceAssetSearchPath RelativePath="" />
       </SourceAssetSearchPaths>
